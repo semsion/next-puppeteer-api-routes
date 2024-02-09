@@ -1,34 +1,35 @@
 ## Getting Started
 
-First, run the development server:
+First, install dependancies:
+
+```
+npm install
+```
+
+Next, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then you have two options.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Pull data via a browser:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Simply go to a browser to see the output of a screenshot from any webpage via a URL such as http://localhost:3000/api/screenshot?url=https://www.bbc.co.uk, or pull the html from the front page of this appication to convert to a PDF via the URL http://localhost:3000/api/pdf 
 
-## Learn More
+### Pull data via the terminal:
 
-To learn more about Next.js, take a look at the following resources:
+If you have the command line utility curl intalled, proceed as follows to pull a screenshot (bash/zsh):
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```
+curl -O --output-dir <path_to_local_directory> http://localhost:3000/api/screenshot\?url\=https://www.bbc.co.uk
+```
+Note: where <path_to_local_directory> is specified above, replace all of this (including the angled brackets) with a local directory such as ~/Downloads.
 
-## Deploy on Vercel
+The below indicates a similar method to pull html data to convert to a PDF:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```
+curl -O --output-dir <path_to_local_directory> http://localhost:3000/api/pdf
+```
