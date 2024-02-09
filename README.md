@@ -26,7 +26,7 @@ If you have the command line utility curl intalled, proceed as follows to pull a
 ```
 curl -O --output-dir <path_to_local_directory> http://localhost:3000/api/screenshot\?url\=https://www.bbc.co.uk
 ```
-Note 1: where <path_to_local_directory> is specified above, replace all of this (including the angled brackets) with a local directory such as ~/Downloads.\\
+Note 1: where <path_to_local_directory> is specified above, replace all of this (including the angled brackets) with a local directory such as ~/Downloads.<br />
 Note 2: it may take a few seconds to generate the screenshot above, or the PDF below.
 
 The below indicates a similar method to pull html data to convert to a PDF:
