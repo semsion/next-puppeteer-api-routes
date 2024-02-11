@@ -14,7 +14,7 @@ npm run dev
 
 Then you have two options.
 
-### Pull data via a browser:
+### Pull data via the browser:
 
 Simply go to a browser to see the output of a screenshot from any webpage via a URL such as http://localhost:3000/api/screenshot?url=https://www.bbc.co.uk, or pull the html from the front page of this appication to convert to a PDF via the URL http://localhost:3000/api/pdf 
 
