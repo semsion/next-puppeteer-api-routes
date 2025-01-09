@@ -1,3 +1,8 @@
+# next-puppeteer-api-routes
+
+A **Next.js** project that demonstrates using **Puppeteer** within API routes for server-side web scraping, automation, and rendering content to a web page. This setup integrates headless browser functionality into Next.js applications for dynamic content generation.
+
+
 ## Getting Started
 
 First, install dependancies:
