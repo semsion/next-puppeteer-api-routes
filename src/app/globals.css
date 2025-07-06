@@ -24,3 +24,87 @@ body {
   position: absolute;
   top: 0;
 }
+
+.page {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: system-ui, sans-serif;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.form div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.button {
+  padding: 12px 20px;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.button:hover {
+  background-color: #0051b3;
+}
+
+.button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.error {
+  color: #e00;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #e00;
+  border-radius: 4px;
+  background-color: #fff0f0;
+}
+
+.results {
+  margin-top: 30px;
+}
+
+.resultItem {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+.resultItem h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #eaeaea;
+  margin: 20px 0;
+}
