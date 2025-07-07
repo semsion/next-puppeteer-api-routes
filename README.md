@@ -73,5 +73,5 @@ curl -O --output-dir <path_to_local_directory> http://localhost:3000/api/pdf
 **Notes:**
 1. Replace `<path_to_local_directory>` with a local directory such as `~/Downloads`
 2. It may take a few seconds to generate screenshots or PDFs
-3. The page that the HTML is pulled from for PDFs is the default page served by Next.js, viewable at `http://localhost:3000`
+3. The PDF example pulls HTML from the Next.js default page at http://localhost:3000
 
